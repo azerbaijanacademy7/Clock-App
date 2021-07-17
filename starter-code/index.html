@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+  <title>Frontend Mentor | Clock App</title>
+</head>
+<body>
+  <div id="main-wrapper" class="main_wrapper">
+    <div class="black_screen">
+      <div id="quotes">
+        <div class="quotes_wrapper">
+          <div>
+            <p id="quotes-text"></p>
+            <p id="quotes-author"></p>
+          </div>
+          <img src="./assets/desktop/icon-refresh.svg" alt="refresh" id="refresh-icon" class="reload_icon">
+        </div>
+      </div>
+      <div id="clock-wrapper" class="clock_wrapper_more">
+        <div class="clock_data">
+          <div class="good_time_msg">
+            <img id='good-time-icon' src="" alt="good time icon">
+            <p id="good-time"></p>
+            <p class="tab_desk_msg">, it's currently</p>
+          </div>
+          <div class="clock">
+            <h1 id="clock-time"></h1>
+            <p id="time-region"></p>
+          </div>
+        </div>
+        <div id="more-btn" class="more_btn">
+          <button id="btn" class="btn_more">More</button>
+          <img id="btn-icon" src="./assets/desktop/icon-arrow-down.png" alt="icon down">
+        </div>
+        
+      </div>
+    </div>
+    <div id="more-sect" class="more_sect">
+      <div class="more_wrapper">
+        <div class="container-fluid p-0">
+        <div class="row p-0">
+
+            <div class="col-sm-12 col-md-6">
+              <div class="time_zone api_flex_data">
+                  <p class="api_header">Current Timezone</p>
+                  <p class="api_data" id="time-zone"></p>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+              <div class="day_of_year api_flex_data">
+                  <p class="api_header">day of the year</p>
+                  <p class="api_data" id="day-of-year"></p>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+              <div class="day_of_week api_flex_data">
+                  <p class="api_header">day of the week</p>
+                  <p class="api_data" id="day-of-week"></p>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+              <div class="week_num api_flex_data last_element">
+                  <p class="api_header">week number</p>
+                  <p class="api_data" id="week-number"></p>
+              </div>
+            </div> 
+
+           
+        </div>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+</body>
+</html>
